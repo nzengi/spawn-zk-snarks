@@ -1,6 +1,6 @@
 [package]
 name = "spawn-zk-snarks"
-version = "0.1.1"
+version = "0.1.2"
 authors = ["nzengi <zenginureddin1@gmail.com>"]
 edition = "2021"
 description = "zk-snarks in rust"
@@ -12,13 +12,13 @@ keywords = ["WASM", "zk", "blockchain", "WebAssembly", "Rust"]
 categories = ["cryptography", "web-programming"]
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["cdylib"]  # For WebAssembly or C-compatible dynamic library.
 
 [dependencies]
-sha2 = "0.10"
-rand = "0.8"
+sha2 = "0.10"  # SHA-256 hash function.
+rand = "0.8"   # Random number generation.
 
 [package.metadata.docs.rs]
-rustdoc-args = ["--cfg", "docsrs"]
+rustdoc-args = ["--cfg", "docsrs"]  # Allows custom documentation when built on docs.rs.
 all-features = true
 no-default-features = false
