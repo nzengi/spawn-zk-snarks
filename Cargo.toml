@@ -1,6 +1,6 @@
 [package]
 name = "spawn-zk-snarks"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["nzengi <zenginureddin1@gmail.com>"]
 edition = "2021"
 description = "zk-snarks in rust"
@@ -11,6 +11,14 @@ readme = "README.md"
 keywords = ["WASM", "zk", "blockchain", "WebAssembly", "Rust"]
 categories = ["cryptography", "web-programming"]
 
+[lib]
+crate-type = ["cdylib"]
+
 [dependencies]
 sha2 = "0.10"
 rand = "0.8"
+
+[package.metadata.docs.rs]
+rustdoc-args = ["--cfg", "docsrs"]
+all-features = true
+no-default-features = false
