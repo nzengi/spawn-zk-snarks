@@ -1,7 +1,15 @@
 [package]
 name = "spawn-zk-snarks"
 version = "0.1.0"
+authors = ["nzengi <zenginureddin1@gmail.com>"]
 edition = "2021"
+description = "zk-snarks in rust"
+license = "MIT"
+repository = "https://github.com/nzengi/spawn-zk-snarks"
+homepage = "https://github.com/nzengi/spawn-zk-snarks"
+readme = "README.md"
+keywords = ["WASM", "zk", "blockchain", "WebAssembly", "Rust"]
+categories = ["cryptography", "web-programming"]
 
 [dependencies]
 sha2 = "0.10"
